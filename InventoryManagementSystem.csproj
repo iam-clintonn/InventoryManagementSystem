@@ -16,6 +16,8 @@
     <PackageReference Include="Kimtoo.DbContext" Version="1.0.2" />
     <PackageReference Include="Kimtoo.Preloader" Version="1.0.5" />
     <PackageReference Include="Kimtoo.ValidationProvider" Version="1.0.8" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
     <PackageReference Include="ServiceStack.OrmLite.MySql" Version="6.2.0" />
     <PackageReference Include="ServiceStack.OrmLite.SqlServer" Version="6.2.0" />
   </ItemGroup>

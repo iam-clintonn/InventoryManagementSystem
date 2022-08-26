@@ -21,5 +21,20 @@ namespace InventoryManagementSystem
         {
 
         }
+
+        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton26_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

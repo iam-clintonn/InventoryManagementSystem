@@ -337,6 +337,7 @@
             this.Controls.Add(this.bunifuTextBox1);
             this.Controls.Add(this.guna2CircleButton1);
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShopRite Inventory";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.FrmMain_Load);

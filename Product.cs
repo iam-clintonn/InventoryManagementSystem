@@ -66,5 +66,19 @@ namespace InventoryManagementSystem
         {
             Application.Exit();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Category log = new Category();
+            this.Hide();
+            log.Show();
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            Attendant log = new Attendant();
+            this.Hide();
+            log.Show();
+        }
     }
 }

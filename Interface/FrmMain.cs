@@ -22,12 +22,12 @@ namespace InventoryManagementSystem.Interface
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void BunifuFlatButton1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        private void BunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
         {
 
         }
@@ -37,14 +37,16 @@ namespace InventoryManagementSystem.Interface
 
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
+            Home log = new Home();
+            this.Hide();
+            log.Show();
         }
     }
 }

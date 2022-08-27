@@ -350,7 +350,7 @@
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "ATTENDANTS";
+            this.bunifuThinButton21.ButtonText = "PRODUCTS";
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleBorderThickness = 1;
@@ -389,6 +389,7 @@
             this.bunifuThinButton23.Size = new System.Drawing.Size(126, 41);
             this.bunifuThinButton23.TabIndex = 4;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // bunifuThinButton22
             // 
@@ -413,6 +414,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(126, 41);
             this.bunifuThinButton22.TabIndex = 5;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuFlatButton1
             // 

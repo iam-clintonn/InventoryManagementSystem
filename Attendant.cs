@@ -46,5 +46,25 @@ namespace InventoryManagementSystem
         {
             Application.Exit();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Product F1 = new Product();
+            this.Hide();
+            F1.Show();
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Category log = new Category();
+            this.Hide();
+            log.Show();
+
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,8 +34,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-            Product F1 = new Product();
-            F1.Show(); 
+            Product log = new Product();
+            this.Hide();
+            log.Show(); 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -45,8 +46,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-            Attendant F1 = new Attendant();
-            F1.Show();
+            Attendant log = new Attendant();
+            this.Hide();
+            log.Show();
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -56,15 +58,17 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            Category F1 = new Category();
-            F1.Show();
+            Category log = new Category();
+            this.Hide();
+            log.Show();
 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Interface.FrmMain F1 = new Interface.FrmMain();
-            F1.Show();
+            Interface.FrmMain log = new Interface.FrmMain();
+            this.Hide();
+            log.Show();
         }
     }
 }

@@ -35,11 +35,11 @@
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.CategoryDesc = new Bunifu.UI.WinForms.BunifuLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.CategoryName = new Bunifu.UI.WinForms.BunifuLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.CategoryId = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -60,15 +60,15 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
             this.bunifuShadowPanel1.Controls.Add(this.textBox3);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel4);
+            this.bunifuShadowPanel1.Controls.Add(this.CategoryDesc);
             this.bunifuShadowPanel1.Controls.Add(this.textBox2);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel3);
+            this.bunifuShadowPanel1.Controls.Add(this.CategoryName);
             this.bunifuShadowPanel1.Controls.Add(this.textBox1);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel2);
+            this.bunifuShadowPanel1.Controls.Add(this.CategoryId);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(142, 36);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(148, 51);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.SystemColors.ActiveCaption;
@@ -164,6 +164,7 @@
             this.bunifuThinButton24.Size = new System.Drawing.Size(77, 41);
             this.bunifuThinButton24.TabIndex = 11;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // textBox3
             // 
@@ -174,21 +175,21 @@
             this.textBox3.TabIndex = 6;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // bunifuLabel4
+            // CategoryDesc
             // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuLabel4.Location = new System.Drawing.Point(21, 185);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(111, 19);
-            this.bunifuLabel4.TabIndex = 5;
-            this.bunifuLabel4.Text = "CATEGORIES";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.CategoryDesc.AllowParentOverrides = false;
+            this.CategoryDesc.AutoEllipsis = false;
+            this.CategoryDesc.CursorType = System.Windows.Forms.Cursors.Default;
+            this.CategoryDesc.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CategoryDesc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CategoryDesc.Location = new System.Drawing.Point(21, 185);
+            this.CategoryDesc.Name = "CategoryDesc";
+            this.CategoryDesc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CategoryDesc.Size = new System.Drawing.Size(120, 19);
+            this.CategoryDesc.TabIndex = 5;
+            this.CategoryDesc.Text = "DESCRIPTION";
+            this.CategoryDesc.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.CategoryDesc.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // textBox2
             // 
@@ -198,21 +199,21 @@
             this.textBox2.Size = new System.Drawing.Size(199, 23);
             this.textBox2.TabIndex = 4;
             // 
-            // bunifuLabel3
+            // CategoryName
             // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuLabel3.Location = new System.Drawing.Point(21, 141);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(50, 19);
-            this.bunifuLabel3.TabIndex = 3;
-            this.bunifuLabel3.Text = "NAME";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.CategoryName.AllowParentOverrides = false;
+            this.CategoryName.AutoEllipsis = false;
+            this.CategoryName.CursorType = System.Windows.Forms.Cursors.Default;
+            this.CategoryName.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CategoryName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CategoryName.Location = new System.Drawing.Point(21, 141);
+            this.CategoryName.Name = "CategoryName";
+            this.CategoryName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CategoryName.Size = new System.Drawing.Size(50, 19);
+            this.CategoryName.TabIndex = 3;
+            this.CategoryName.Text = "NAME";
+            this.CategoryName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.CategoryName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // textBox1
             // 
@@ -222,21 +223,21 @@
             this.textBox1.Size = new System.Drawing.Size(199, 23);
             this.textBox1.TabIndex = 2;
             // 
-            // bunifuLabel2
+            // CategoryId
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuLabel2.Location = new System.Drawing.Point(21, 99);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(20, 19);
-            this.bunifuLabel2.TabIndex = 1;
-            this.bunifuLabel2.Text = "ID";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.CategoryId.AllowParentOverrides = false;
+            this.CategoryId.AutoEllipsis = false;
+            this.CategoryId.CursorType = System.Windows.Forms.Cursors.Default;
+            this.CategoryId.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CategoryId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CategoryId.Location = new System.Drawing.Point(21, 99);
+            this.CategoryId.Name = "CategoryId";
+            this.CategoryId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CategoryId.Size = new System.Drawing.Size(20, 19);
+            this.CategoryId.TabIndex = 1;
+            this.CategoryId.Text = "ID";
+            this.CategoryId.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.CategoryId.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel1
             // 
@@ -275,7 +276,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(855, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(877, 12);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -313,6 +314,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(126, 41);
             this.bunifuThinButton22.TabIndex = 21;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton23
             // 
@@ -337,6 +339,7 @@
             this.bunifuThinButton23.Size = new System.Drawing.Size(126, 41);
             this.bunifuThinButton23.TabIndex = 20;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // bunifuThinButton21
             // 
@@ -361,12 +364,13 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(126, 41);
             this.bunifuThinButton21.TabIndex = 19;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 524);
+            this.ClientSize = new System.Drawing.Size(936, 563);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.bunifuThinButton21);
@@ -374,6 +378,7 @@
             this.Controls.Add(this.bunifuShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Category";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category";
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
@@ -390,11 +395,11 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private TextBox textBox3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private Bunifu.UI.WinForms.BunifuLabel CategoryDesc;
         private TextBox textBox2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
+        private Bunifu.UI.WinForms.BunifuLabel CategoryName;
         private TextBox textBox1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel CategoryId;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;

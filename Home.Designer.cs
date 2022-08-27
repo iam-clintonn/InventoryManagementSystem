@@ -106,6 +106,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(222, 37);
             this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // guna2Button1
             // 
@@ -120,6 +121,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(129, 31);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Logout";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // bunifuThinButton24
             // 

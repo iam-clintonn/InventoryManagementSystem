@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace InventoryManagementSystem
 {
@@ -21,10 +22,24 @@ namespace InventoryManagementSystem
         {
 
         }
-
+        SqlConnection Con = new SqlConnection(@"");
+        private void fillcombo()
+        {
+            // This method seeks to bond the CombpBox and the Datatbase
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("Select CategoryName from CategoryTbl", Con);
+            SqlDataReader rdr; 
+            rdr = cmd.ExecuteReader();  
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CategoryName", typeof(string));
+            dt.Load(rdr);
+            CatCb.ValueMember = "CategoryName";
+            CatCb.DataSource = dt;
+           Con.Close();
+        }
         private void Product_Load(object sender, EventArgs e)
         {
-
+            fillcombo();
         }
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
@@ -69,6 +84,7 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+        
             Category log = new Category();
             this.Hide();
             log.Show();
@@ -79,6 +95,16 @@ namespace InventoryManagementSystem
             Attendant log = new Attendant();
             this.Hide();
             log.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CatCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

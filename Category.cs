@@ -30,7 +30,27 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (CategoryId.Text == "")
+                {
+                    MessageBox.Show("Select Category To Delete");
+                }
+                else
+                {
+                    Con.Open();
+                    string query = "delete from CategoryTbl where CategoryId=" + CategoryId.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("category Deleted Successfully");
+                    Con.Close();
+                    populate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -70,6 +90,51 @@ namespace InventoryManagementSystem
             }catch(Exception ex) 
             {
                 MessageBox.Show(ex.Message);    
+            }
+        }
+        private void populate()
+        {
+            Con.Open();
+            string query = "select * from CategoryTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet(); 
+            sda.Fill(ds);
+            CategoryDGV.DataSource = ds.Tables[0];    
+            Con.Close();
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CategoryId.Text = CategoryDGV.SelectedRows[0].Cells[0].Value.ToString();
+            CategoryName.Text = CategoryDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CategoryDesc.Text = CategoryDGV.SelectedRows[0].Cells[2].Value.ToString();
+
+
+        }
+
+        private void bunifuThinButton25_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                if (CategoryId.Text == "" || CategoryName.Text == "" || CategoryDesc.Text == "")
+                {
+                    MessageBox.Show("Missing Information");
+
+                }
+
+                else
+                {
+                    Con.Open();
+                    string query = "update CategoryTbl set CategoryName='" + CategoryName.Text + "',CategoryDesc='" + CategoryDesc.Text + "'where CategoryId=" + CategoryId.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Updated Successfully");
+                    Con.Close();
+                    populate();
+                }
+            }catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

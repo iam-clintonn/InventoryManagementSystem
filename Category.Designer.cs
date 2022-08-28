@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CategoryDGV = new System.Windows.Forms.DataGridView();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -46,7 +46,7 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CategoryDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuShadowPanel1
@@ -55,7 +55,7 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 1;
             this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.dataGridView1);
+            this.bunifuShadowPanel1.Controls.Add(this.CategoryDGV);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
@@ -82,15 +82,16 @@
             this.bunifuShadowPanel1.TabIndex = 4;
             this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded);
             // 
-            // dataGridView1
+            // CategoryDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(393, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(345, 320);
-            this.dataGridView1.TabIndex = 14;
+            this.CategoryDGV.BackgroundColor = System.Drawing.Color.White;
+            this.CategoryDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CategoryDGV.Location = new System.Drawing.Point(393, 95);
+            this.CategoryDGV.Name = "CategoryDGV";
+            this.CategoryDGV.RowTemplate.Height = 25;
+            this.CategoryDGV.Size = new System.Drawing.Size(345, 320);
+            this.CategoryDGV.TabIndex = 14;
+            this.CategoryDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuThinButton26
             // 
@@ -140,6 +141,7 @@
             this.bunifuThinButton25.Size = new System.Drawing.Size(84, 41);
             this.bunifuThinButton25.TabIndex = 12;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
             // bunifuThinButton24
             // 
@@ -382,7 +384,7 @@
             this.Text = "Category";
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CategoryDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,7 +392,7 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private DataGridView dataGridView1;
+        private DataGridView CategoryDGV;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;

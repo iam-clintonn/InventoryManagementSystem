@@ -36,7 +36,7 @@
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CatCb = new System.Windows.Forms.ComboBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -67,7 +67,7 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
-            this.bunifuShadowPanel1.Controls.Add(this.comboBox1);
+            this.bunifuShadowPanel1.Controls.Add(this.CatCb);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel6);
             this.bunifuShadowPanel1.Controls.Add(this.textBox4);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel5);
@@ -123,6 +123,7 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(336, 272);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuThinButton26
             // 
@@ -197,15 +198,16 @@
             this.bunifuThinButton24.TabIndex = 11;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // CatCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(129, 274);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(199, 24);
-            this.comboBox1.TabIndex = 10;
-            this.comboBox1.Text = "Select Category";
+            this.CatCb.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CatCb.FormattingEnabled = true;
+            this.CatCb.Location = new System.Drawing.Point(129, 274);
+            this.CatCb.Name = "CatCb";
+            this.CatCb.Size = new System.Drawing.Size(199, 24);
+            this.CatCb.TabIndex = 10;
+            this.CatCb.Text = "Select Category";
+            this.CatCb.SelectedIndexChanged += new System.EventHandler(this.CatCb_SelectedIndexChanged);
             // 
             // bunifuLabel6
             // 
@@ -491,7 +493,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private ComboBox comboBox1;
+        private ComboBox CatCb;
         private Button button1;
         private ComboBox comboBox2;
         private DataGridView dataGridView1;

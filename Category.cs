@@ -42,7 +42,7 @@ namespace InventoryManagementSystem
                     string query = "delete from CategoryTbl where CategoryId=" + CategoryId.Text + "";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("category Deleted Successfully");
+                    MessageBox.Show("Category Deleted Successfully");
                     Con.Close();
                     populate();
                 }
@@ -76,7 +76,8 @@ namespace InventoryManagementSystem
             this.Hide();
             log.Show();
         }
-        SqlConnection Con = new SqlConnection(@"");
+
+        SqlConnection Con = new SqlConnection(@""); 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
             try 
@@ -87,6 +88,7 @@ namespace InventoryManagementSystem
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Category Successefuly Added");
                 Con.Close();
+                populate();
             }catch(Exception ex) 
             {
                 MessageBox.Show(ex.Message);    
@@ -136,6 +138,11 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Category_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

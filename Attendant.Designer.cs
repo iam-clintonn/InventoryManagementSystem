@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attendant));
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.AttendantPassword = new System.Windows.Forms.TextBox();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.AttendantDGV = new System.Windows.Forms.DataGridView();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.AttendantPhone = new System.Windows.Forms.TextBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.AttendantAge = new System.Windows.Forms.TextBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AttendantName = new System.Windows.Forms.TextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AttendantId = new System.Windows.Forms.TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,7 +52,7 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AttendantDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuShadowPanel1
@@ -61,21 +61,21 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 1;
             this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.textBox5);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantPassword);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel7);
-            this.bunifuShadowPanel1.Controls.Add(this.dataGridView1);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantDGV);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
             this.bunifuShadowPanel1.Controls.Add(this.comboBox1);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel6);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox4);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantPhone);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel5);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox3);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantAge);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel4);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox2);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantName);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel3);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox1);
+            this.bunifuShadowPanel1.Controls.Add(this.AttendantId);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel2);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -93,13 +93,13 @@
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 3;
             // 
-            // textBox5
+            // AttendantPassword
             // 
-            this.textBox5.Location = new System.Drawing.Point(129, 277);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 23);
-            this.textBox5.TabIndex = 16;
+            this.AttendantPassword.Location = new System.Drawing.Point(129, 277);
+            this.AttendantPassword.Multiline = true;
+            this.AttendantPassword.Name = "AttendantPassword";
+            this.AttendantPassword.Size = new System.Drawing.Size(199, 23);
+            this.AttendantPassword.TabIndex = 16;
             // 
             // bunifuLabel7
             // 
@@ -117,15 +117,16 @@
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // dataGridView1
+            // AttendantDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(400, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(336, 272);
-            this.dataGridView1.TabIndex = 14;
+            this.AttendantDGV.BackgroundColor = System.Drawing.Color.White;
+            this.AttendantDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AttendantDGV.Location = new System.Drawing.Point(400, 99);
+            this.AttendantDGV.Name = "AttendantDGV";
+            this.AttendantDGV.RowTemplate.Height = 25;
+            this.AttendantDGV.Size = new System.Drawing.Size(336, 272);
+            this.AttendantDGV.TabIndex = 14;
+            this.AttendantDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuThinButton26
             // 
@@ -231,13 +232,13 @@
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox4
+            // AttendantPhone
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 231);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 23);
-            this.textBox4.TabIndex = 8;
+            this.AttendantPhone.Location = new System.Drawing.Point(129, 231);
+            this.AttendantPhone.Multiline = true;
+            this.AttendantPhone.Name = "AttendantPhone";
+            this.AttendantPhone.Size = new System.Drawing.Size(199, 23);
+            this.AttendantPhone.TabIndex = 8;
             // 
             // bunifuLabel5
             // 
@@ -255,13 +256,13 @@
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox3
+            // AttendantAge
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 185);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 23);
-            this.textBox3.TabIndex = 6;
+            this.AttendantAge.Location = new System.Drawing.Point(129, 185);
+            this.AttendantAge.Multiline = true;
+            this.AttendantAge.Name = "AttendantAge";
+            this.AttendantAge.Size = new System.Drawing.Size(199, 23);
+            this.AttendantAge.TabIndex = 6;
             // 
             // bunifuLabel4
             // 
@@ -279,13 +280,13 @@
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox2
+            // AttendantName
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 137);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 23);
-            this.textBox2.TabIndex = 4;
+            this.AttendantName.Location = new System.Drawing.Point(129, 137);
+            this.AttendantName.Multiline = true;
+            this.AttendantName.Name = "AttendantName";
+            this.AttendantName.Size = new System.Drawing.Size(199, 23);
+            this.AttendantName.TabIndex = 4;
             // 
             // bunifuLabel3
             // 
@@ -303,13 +304,13 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox1
+            // AttendantId
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 95);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 23);
-            this.textBox1.TabIndex = 2;
+            this.AttendantId.Location = new System.Drawing.Point(129, 95);
+            this.AttendantId.Multiline = true;
+            this.AttendantId.Name = "AttendantId";
+            this.AttendantId.Size = new System.Drawing.Size(199, 23);
+            this.AttendantId.TabIndex = 2;
             // 
             // bunifuLabel2
             // 
@@ -471,7 +472,7 @@
             this.Load += new System.EventHandler(this.Attendant_Load);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AttendantDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -479,25 +480,25 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private DataGridView dataGridView1;
+        private DataGridView AttendantDGV;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private ComboBox comboBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private TextBox textBox4;
+        private TextBox AttendantPhone;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private TextBox textBox3;
+        private TextBox AttendantAge;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private TextBox textBox2;
+        private TextBox AttendantName;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private TextBox textBox1;
+        private TextBox AttendantId;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private TextBox textBox5;
+        private TextBox AttendantPassword;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }

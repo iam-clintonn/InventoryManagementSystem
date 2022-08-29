@@ -40,6 +40,7 @@ namespace InventoryManagementSystem
         private void Product_Load(object sender, EventArgs e)
         {
             fillcombo();
+            
         }
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
@@ -74,7 +75,27 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (ProductId.Text == "")
+                {
+                    MessageBox.Show("Select Product To Delete");
+                }
+                else
+                {
+                    Con.Open();
+                    string query = "delete from ProductTbl where ProductId=" + ProductId.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Deleted Successfully");
+                    Con.Close();
+                    //populate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -99,12 +120,62 @@ namespace InventoryManagementSystem
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            ProductId.Text = ProductDGV.SelectedRows[0].Cells[0].Value.ToString();
+            ProductName.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
+            ProductPrice.Text = ProductDGV.SelectedRows[0].Cells[2].Value.ToString();
+            ProductQty.Text = ProductDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CatCb.SelectedValue = ProductDGV.SelectedRows[0].Cells[4].Value.ToString();  
 
         }
 
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Con.Open();
+                string query = "insert into ProductTbl values(" + ProductId.Text + ", '" + ProductName.Text + "', '" +ProductQty.Text + ", "+ProductPrice.Text+",'"+CatCb.SelectedValue.ToString()+"')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Product Successefuly Added");
+                Con.Close();
+                //populate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bunifuThinButton25_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ProductId.Text == "" || ProductName.Text == "" || ProductPrice.Text == "" || ProductQty.Text == "")
+                {
+                    MessageBox.Show("Missing Information");
+
+                }
+
+                else
+                {
+                    Con.Open();
+                    string query = "update ProductTbl set CategoryName='" + ProductName.Text + "',ProductPrice='" + ProductPrice.Text + "'where ProductId=" + ProductId.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated Successfully");
+                    Con.Close();
+                    //populate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

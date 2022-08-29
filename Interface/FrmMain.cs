@@ -48,5 +48,16 @@ namespace InventoryManagementSystem.Interface
             this.Hide();
             log.Show();
         }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            UsernameTb.Text = "";
+            PasswordTb.Text = "";
+        }
     }
 }

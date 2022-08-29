@@ -32,19 +32,19 @@
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProductDGV = new System.Windows.Forms.DataGridView();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.CatCb = new System.Windows.Forms.ComboBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ProductPrice = new System.Windows.Forms.TextBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ProductQty = new System.Windows.Forms.TextBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ProductName = new System.Windows.Forms.TextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProductId = new System.Windows.Forms.TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -52,7 +52,7 @@
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuShadowPanel1
@@ -63,19 +63,19 @@
             this.bunifuShadowPanel1.BorderThickness = 1;
             this.bunifuShadowPanel1.Controls.Add(this.button1);
             this.bunifuShadowPanel1.Controls.Add(this.comboBox2);
-            this.bunifuShadowPanel1.Controls.Add(this.dataGridView1);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductDGV);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
             this.bunifuShadowPanel1.Controls.Add(this.CatCb);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel6);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox4);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductPrice);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel5);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox3);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductQty);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel4);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox2);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductName);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel3);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox1);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductId);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel2);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -114,16 +114,16 @@
             this.comboBox2.TabIndex = 15;
             this.comboBox2.Text = "Select Category";
             // 
-            // dataGridView1
+            // ProductDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(400, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(336, 272);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.ProductDGV.BackgroundColor = System.Drawing.Color.White;
+            this.ProductDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProductDGV.Location = new System.Drawing.Point(400, 99);
+            this.ProductDGV.Name = "ProductDGV";
+            this.ProductDGV.RowTemplate.Height = 25;
+            this.ProductDGV.Size = new System.Drawing.Size(336, 272);
+            this.ProductDGV.TabIndex = 14;
+            this.ProductDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuThinButton26
             // 
@@ -173,6 +173,7 @@
             this.bunifuThinButton25.Size = new System.Drawing.Size(84, 41);
             this.bunifuThinButton25.TabIndex = 12;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
             // bunifuThinButton24
             // 
@@ -197,11 +198,18 @@
             this.bunifuThinButton24.Size = new System.Drawing.Size(77, 41);
             this.bunifuThinButton24.TabIndex = 11;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // CatCb
             // 
             this.CatCb.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CatCb.FormattingEnabled = true;
+            this.CatCb.Items.AddRange(new object[] {
+            "Vegetable",
+            "Meat",
+            "Beverage",
+            "Dairy",
+            "Snack"});
             this.CatCb.Location = new System.Drawing.Point(129, 274);
             this.CatCb.Name = "CatCb";
             this.CatCb.Size = new System.Drawing.Size(199, 24);
@@ -226,14 +234,14 @@
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel6.Click += new System.EventHandler(this.bunifuLabel6_Click);
             // 
-            // textBox4
+            // ProductPrice
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 231);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 23);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.ProductPrice.Location = new System.Drawing.Point(129, 231);
+            this.ProductPrice.Multiline = true;
+            this.ProductPrice.Name = "ProductPrice";
+            this.ProductPrice.Size = new System.Drawing.Size(199, 23);
+            this.ProductPrice.TabIndex = 8;
+            this.ProductPrice.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // bunifuLabel5
             // 
@@ -251,13 +259,13 @@
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox3
+            // ProductQty
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 185);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 23);
-            this.textBox3.TabIndex = 6;
+            this.ProductQty.Location = new System.Drawing.Point(129, 185);
+            this.ProductQty.Multiline = true;
+            this.ProductQty.Name = "ProductQty";
+            this.ProductQty.Size = new System.Drawing.Size(199, 23);
+            this.ProductQty.TabIndex = 6;
             // 
             // bunifuLabel4
             // 
@@ -276,14 +284,14 @@
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel4.Click += new System.EventHandler(this.bunifuLabel4_Click);
             // 
-            // textBox2
+            // ProductName
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 137);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 23);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.ProductName.Location = new System.Drawing.Point(129, 137);
+            this.ProductName.Multiline = true;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.Size = new System.Drawing.Size(199, 23);
+            this.ProductName.TabIndex = 4;
+            this.ProductName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // bunifuLabel3
             // 
@@ -302,14 +310,14 @@
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel3_Click);
             // 
-            // textBox1
+            // ProductId
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 95);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.ProductId.Location = new System.Drawing.Point(129, 95);
+            this.ProductId.Multiline = true;
+            this.ProductId.Name = "ProductId";
+            this.ProductId.Size = new System.Drawing.Size(199, 23);
+            this.ProductId.TabIndex = 2;
+            this.ProductId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // bunifuLabel2
             // 
@@ -470,7 +478,7 @@
             this.Load += new System.EventHandler(this.Product_Load);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -482,12 +490,12 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox ProductId;
+        private TextBox ProductName;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private TextBox textBox3;
+        private TextBox ProductQty;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private TextBox textBox4;
+        private TextBox ProductPrice;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
@@ -496,7 +504,7 @@
         private ComboBox CatCb;
         private Button button1;
         private ComboBox comboBox2;
-        private DataGridView dataGridView1;
+        private DataGridView ProductDGV;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

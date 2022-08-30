@@ -57,10 +57,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Total.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="AmountLbl.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAiCAYAAACwRFDGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJvSURBVHhe7ds/aBNRHAfwjI6ObjqKtAki0mpIUiuUbjpo
+        roXSxDZpQMVJ1EHUQdAmaa9JLiU6+Qe61BbxD4rQUou1oEMppVg6RCpksCFcaoOWZHj6vbyeSGpywUWa
+        7wcOApdkuS/vvd/7vbMRERERERHR/2L/Td8ee8Tb5UoEXroT/QutMV/WHlEEr9194TnjeXu0wHRzWPE7
+        1FN7ZSSss4fPdB6P+3OXJsMbrz7NiY9flkUmvy5o98NzxvOeWv0grjwf2XQm+vQW1ReU0agOaWtLBid7
+        x27o2YIu/5Ia2betgrj8TM27teD8ofDZfTIqlRAetxZYm1icKsrfEpnepRdER+r8muOOckBG5k8YeRge
+        qgZTG9ZHMjK/Yc2Daav8NaK/G5x+UHDGzt2S0SlXW1gwc81DVmyViqLz3sVcU7T7oBEglGpYbcv7RDXd
+        fz9ROhb3q0aAUO+jZCOyauXrZ/GrvE8bAXLG/Jl0LiNvEdWGaezwUHfJCNCR4Z7vqPWJ6oFdayNA+EBU
+        LzNAGIowJBHVwwwQmmfsc1G9zAChx4FtaiKrUHSh+DICdHSo53p05vEPeY+opqdLM8KV6Bs3AoTm2MnR
+        kM51EFkVGr+dbxr0njYCBJ5kMDoyO8bdaKrpxfJs8URy4LWMThn6Ye3JgaXFzKr8GlEl9Es9WmB9x1OK
+        aI51pC5kuStNO0F4lIdXc46I0iYjU6n5rrcVh8pSc0+4qCbTm5X5ojHyVAvPNkxnLq0/3vXomo7VNo95
+        NCa0t3AeHufi20dDb+s+XI+0oVRrUXs3sGnEq7Eu9EjxRg7ezJGRICIiIiKif2Oz/QQDb3MyUBdQigAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuThinButton26.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFQAAAApCAYAAACr1w7eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -112,7 +150,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+  <data name="Price.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
@@ -122,6 +160,6 @@
     <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Schoolbook'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
 </root>

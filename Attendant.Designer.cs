@@ -414,7 +414,7 @@
             this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "ATTENDANTS";
+            this.bunifuThinButton23.ButtonText = "SALES";
             this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuThinButton23.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuThinButton23.IdleBorderThickness = 1;

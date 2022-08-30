@@ -120,9 +120,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            Product F1 = new Product();
+            Product log = new Product();
             this.Hide();
-            F1.Show();
+            log.Show();
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -135,7 +135,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-
+            SalesForm log = new SalesForm();
+            this.Hide();
+            log.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

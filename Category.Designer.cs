@@ -302,7 +302,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "CATEGORY";
+            this.bunifuThinButton22.ButtonText = "SALES";
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleBorderThickness = 1;
@@ -310,7 +310,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(14, 157);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(14, 208);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(126, 41);
@@ -335,7 +335,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(14, 208);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(14, 157);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(126, 41);

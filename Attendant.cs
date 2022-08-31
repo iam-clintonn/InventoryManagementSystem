@@ -135,9 +135,7 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            SalesForm log = new SalesForm();
-            this.Hide();
-            log.Show();
+           
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

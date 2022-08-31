@@ -67,9 +67,7 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            SalesForm log = new SalesForm();
-            this.Hide();
-            log.Show();
+            
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)

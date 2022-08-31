@@ -15,12 +15,7 @@ namespace InventoryManagementSystem
     {
         public SalesForm()
         {
-            InitializeComponent("SalesForm");
-        }
-
-        private void InitializeComponent(string v)
-        {
-            throw new NotImplementedException();
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -123,8 +118,8 @@ namespace InventoryManagementSystem
         int flag = 0;
         private void ProductDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ProductName.Text = ProductDGV.SelectedRows[0].Cells[0].Value.ToString();
-            ProductPrice.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
+            ProductNm.Text = ProductDGV.SelectedRows[0].Cells[0].Value.ToString();
+            ProductPrc.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
         }
 
         private void bunifuLabel8_Click(object sender, EventArgs e)
@@ -136,25 +131,100 @@ namespace InventoryManagementSystem
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
            
-            if (ProductName.Text == "" || ProductQty.Text == "")
+            if (ProductNm.Text == "" || ProductQt.Text == "")
             {
                 MessageBox.Show("Missing Data");
             }
             else
             {
-                int total = Convert.ToInt32(ProductPrice.Text) * Convert.ToInt32(ProductQty.Text);
+                int total = Convert.ToInt32(ProductPrc.Text) * Convert.ToInt32(ProductQt.Text);
                 DataGridViewRow newRow = new DataGridViewRow();
                 newRow.CreateCells(ORDERDGV);
                 newRow.Cells[0].Value = n + 1;
-                newRow.Cells[1].Value = ProductName.Text;
-                newRow.Cells[2].Value = ProductPrice.Text;
-                newRow.Cells[3].Value = ProductQty.Text;
-                newRow.Cells[4].Value = Convert.ToInt32(ProductPrice.Text) * Convert.ToInt32(ProductQty.Text);
+                newRow.Cells[1].Value = ProductNm.Text;
+                newRow.Cells[2].Value = ProductPrc.Text;
+                newRow.Cells[3].Value = ProductQt.Text;
+                newRow.Cells[4].Value = Convert.ToInt32(ProductPrc.Text) * Convert.ToInt32(ProductQt.Text);
                 ORDERDGV.Rows.Add(newRow);
                 n++;
                 Grdtotal = Grdtotal + total;
                 AmountLbl.Text = "" + Grdtotal;
             }
+
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DateLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ORDERDGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton21_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CategoryId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CategoryName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CategoryDesc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton24_Click_1(object sender, EventArgs e)
+        {
 
         }
 

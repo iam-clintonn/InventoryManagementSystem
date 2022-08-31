@@ -20,9 +20,7 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            SalesForm log = new SalesForm();
-            this.Hide();
-            log.Show();
+           
         }
         SqlConnection Con = new SqlConnection(@"");
         private void fillcombo()

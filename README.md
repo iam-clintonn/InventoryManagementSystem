@@ -13,6 +13,11 @@ The dashboard contains a navigation sidebar and a primary panel that displays ta
 Here are the navigation options:
     a. Product: The Product button displays the products in stock in a table. Products have columns such as product id, name, quantity, price, description, and category.        A product can be modified or removed from stock. There is a new button for adding new goods to the stock.
     b. Sales: The sales area includes daily and paste sales. Every purchase made by a client is saved here together with the customer and product information. When a            sale is made, a sales invoice/receipt is created, which may then be sent on to the customer. A sale can also be amended for circumstances that follow the                company's return rules.
+    c. Attendants: 
+    
+    d. Category: 
+    
+    
 iv. For BarCode scan feaure. 
     it was assumed that the necessary data for the barcode scanner to retrieve data from the code was already setup.
     For generating barcode Images I used this SDK provided by OnBarcode.com. For reading those barcodes images or scanning those barcode images OnBarcode.com provide the     BarCodeReader SDK.

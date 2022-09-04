@@ -34,17 +34,18 @@
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ProductDesc = new System.Windows.Forms.TextBox();
             this.CategoryDesc = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ProductName = new System.Windows.Forms.TextBox();
             this.CategoryName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProductId = new System.Windows.Forms.TextBox();
             this.CategoryId = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoryDGV)).BeginInit();
             this.SuspendLayout();
@@ -59,11 +60,11 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuThinButton24);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox3);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductDesc);
             this.bunifuShadowPanel1.Controls.Add(this.CategoryDesc);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox2);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductName);
             this.bunifuShadowPanel1.Controls.Add(this.CategoryName);
-            this.bunifuShadowPanel1.Controls.Add(this.textBox1);
+            this.bunifuShadowPanel1.Controls.Add(this.ProductId);
             this.bunifuShadowPanel1.Controls.Add(this.CategoryId);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -168,14 +169,14 @@
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
-            // textBox3
+            // ProductDesc
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 181);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 23);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.ProductDesc.Location = new System.Drawing.Point(150, 181);
+            this.ProductDesc.Multiline = true;
+            this.ProductDesc.Name = "ProductDesc";
+            this.ProductDesc.Size = new System.Drawing.Size(199, 23);
+            this.ProductDesc.TabIndex = 6;
+            this.ProductDesc.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // CategoryDesc
             // 
@@ -193,13 +194,13 @@
             this.CategoryDesc.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.CategoryDesc.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox2
+            // ProductName
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 137);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 23);
-            this.textBox2.TabIndex = 4;
+            this.ProductName.Location = new System.Drawing.Point(150, 137);
+            this.ProductName.Multiline = true;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.Size = new System.Drawing.Size(199, 23);
+            this.ProductName.TabIndex = 4;
             // 
             // CategoryName
             // 
@@ -217,13 +218,14 @@
             this.CategoryName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.CategoryName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBox1
+            // ProductId
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 95);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 23);
-            this.textBox1.TabIndex = 2;
+            this.ProductId.Location = new System.Drawing.Point(150, 95);
+            this.ProductId.Multiline = true;
+            this.ProductId.Name = "ProductId";
+            this.ProductId.Size = new System.Drawing.Size(199, 23);
+            this.ProductId.TabIndex = 2;
+            this.ProductId.TextChanged += new System.EventHandler(this.textbox1_TextChanged);
             // 
             // CategoryId
             // 
@@ -368,11 +370,37 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // bunifuThinButton27
+            // 
+            this.bunifuThinButton27.ActiveBorderThickness = 1;
+            this.bunifuThinButton27.ActiveCornerRadius = 20;
+            this.bunifuThinButton27.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton27.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton27.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton27.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton27.BackgroundImage")));
+            this.bunifuThinButton27.ButtonText = "LOG OUT";
+            this.bunifuThinButton27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuThinButton27.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuThinButton27.IdleBorderThickness = 1;
+            this.bunifuThinButton27.IdleCornerRadius = 20;
+            this.bunifuThinButton27.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton27.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton27.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton27.Location = new System.Drawing.Point(5, 508);
+            this.bunifuThinButton27.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton27.Name = "bunifuThinButton27";
+            this.bunifuThinButton27.Size = new System.Drawing.Size(126, 41);
+            this.bunifuThinButton27.TabIndex = 22;
+            this.bunifuThinButton27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton27.Click += new System.EventHandler(this.bunifuThinButton27_Click);
+            // 
             // Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 563);
+            this.Controls.Add(this.bunifuThinButton27);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.bunifuThinButton21);
@@ -397,16 +425,17 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private TextBox textBox3;
+        private TextBox ProductDesc;
         private Bunifu.UI.WinForms.BunifuLabel CategoryDesc;
-        private TextBox textBox2;
+        private TextBox ProductName;
         private Bunifu.UI.WinForms.BunifuLabel CategoryName;
-        private TextBox textBox1;
+        private TextBox ProductId;
         private Bunifu.UI.WinForms.BunifuLabel CategoryId;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton27;
     }
 }

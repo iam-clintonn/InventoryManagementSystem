@@ -135,7 +135,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-           
+            Sales log = new Sales();
+            this.Hide();
+            log.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -146,6 +148,13 @@ namespace InventoryManagementSystem
             AttendantPhone.Text = AttendantDGV.SelectedRows[0].Cells[3].Value.ToString();
             AttendantPassword.Text = AttendantDGV.SelectedRows[0].Cells[4].Value.ToString();
             
+        }
+
+        private void bunifuThinButton27_Click(object sender, EventArgs e)
+        {
+            Home log = new Home();
+            this.Hide();
+            log.Show();
         }
     }
 }

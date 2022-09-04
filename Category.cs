@@ -67,7 +67,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            
+            Sales log = new Sales();
+            this.Hide();
+            log.Show();
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
@@ -143,6 +145,18 @@ namespace InventoryManagementSystem
         private void Category_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton27_Click(object sender, EventArgs e)
+        {
+            Home log = new Home();
+            this.Hide();
+            log.Show();
         }
     }
 }

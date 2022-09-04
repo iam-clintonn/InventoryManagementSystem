@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace InventoryManagementSystem
 {
     public partial class Product : Form
@@ -20,7 +21,9 @@ namespace InventoryManagementSystem
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-           
+            Sales log = new Sales();
+            this.Hide();
+            log.Show();    
         }
         SqlConnection Con = new SqlConnection(@"");
         private void fillcombo()
@@ -175,6 +178,28 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void ProductQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton27_Click(object sender, EventArgs e)
+        {
+            Home log = new Home();
+            this.Hide();
+            log.Show();
         }
     }
 }

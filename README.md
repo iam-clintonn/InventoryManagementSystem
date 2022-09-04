@@ -1,10 +1,10 @@
 # InventoryManagementSystem
 This is a system developed for ShopRite super mart.
 
-Link to YouTube video: 
+Link to YouTube video: https://www.youtube.com/watch?v=VsaXgspFZvM
 
 Assumptions made : 
-i. For Admin
+i. For Admin : Manage all sections within the software
 
 ii. For Attendants/Vendors/Counter personnel
 
